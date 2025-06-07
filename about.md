@@ -6,9 +6,10 @@ header_title: "About Me"
 
 ## All About Me!
 
-**Name:** WebMaster Supreme  
-**Age:** 22  
-**Location:** Somewhere in Cyberspace  
+**a/s/l:** 18/m/cali
+
+**Interests** Sports, beaches, The Sign 
+
 **Occupation:** Professional Internet Explorer (the activity, not the browser!)
 
 ### My Interests:

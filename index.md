@@ -233,6 +233,14 @@ header_subtitle: "*** NEW POSTS UPDATED WEEKLY! ***"
 <div class="post">
     <div class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
     <div class="post-date">Posted: {{ post.date | date: "%B %d, %Y" }}</div>
+    {% if post.tags and post.tags.size > 0 %}
+    <div class="post-tags">
+        <b>Tags:</b> 
+        {% for tag in post.tags %}
+        <a href="{{ '/tag/' | append: tag | append: '/' | relative_url }}" class="tag">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+    </div>
+    {% endif %}
     {{ post.excerpt }}
     {% if post.mood %}<p><b>Current mood:</b> {{ post.mood }}</p>{% endif %}
 </div>
