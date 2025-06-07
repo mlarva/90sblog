@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: post
 title: "My First Blog Post on the World Wide Web!"
 date: 2024-12-05
+author: chicago-don
 mood: "😎 Excited about the Information Superhighway!"
 tags: [web-development, 90s, nostalgia, jekyll]
 ---

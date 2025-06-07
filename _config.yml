@@ -1,6 +1,8 @@
 # Jekyll Configuration for 90s Blog
 title: "My Totally Rad 90s Blog"
 description: "Welcome to the Information Superhighway!"
+header_title: "All That And A Bag Of Chips"
+header_subtitle: "*** NEW POSTS UPDATED WEEKLY! ***"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
@@ -15,6 +17,21 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+
+# Authors
+authors:
+  sports-steve:
+    name: "Sports Steve"
+    bio: "Former high school quarterback turned sports enthusiast. Steve brings you the latest in athletic excellence and weekend warrior wisdom. Go Bears!"
+    avatar: "🏈"
+  finer-things-francis:
+    name: "Finer Things Francis"
+    bio: "Connoisseur of culture, cuisine, and sophisticated living. Francis explores the art of refined taste in an unrefined world."
+    avatar: "🎩"
+  chicago-don:
+    name: "Chicago Don"
+    bio: "Born and raised in the Windy City. Don knows every deep dish joint, L stop, and Cubs stat worth knowing. The city runs through his veins."
+    avatar: "🌆"
 
 # Collections
 collections:

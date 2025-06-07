@@ -94,94 +94,18 @@
             display: inline-block;
         }
 
-        .guestbook-entry {
-            background-color: #f0f0f0;
-            border: 1px solid #808080;
-            padding: 10px;
-            margin: 10px 0;
-        }
-        
-        .entry-header {
-            color: #800080;
-            font-weight: bold;
-            border-bottom: 1px dotted #808080;
-            padding-bottom: 5px;
-        }
-        
-        form {
-            background-color: #e0e0e0;
-            padding: 15px;
-            border: 2px inset #c0c0c0;
-            margin-top: 20px;
-        }
-        
-        input, textarea {
-            font-family: "Times New Roman", serif;
-            border: 1px inset #c0c0c0;
-        }
-        
-        input[type="submit"] {
-            background-color: #c0c0c0;
-            border: 2px outset #c0c0c0;
-            padding: 5px 15px;
-            font-weight: bold;
-        }
-
-        .link-category {
-            margin: 20px 0;
-            border: 1px solid #808080;
-            background-color: #f0f0f0;
-            padding: 10px;
-        }
-        
-        .link-category h3 {
-            color: #800080;
-            margin-top: 0;
-            border-bottom: 1px dotted #808080;
-        }
-        
-        .cool-link {
-            margin: 5px 0;
-            padding-left: 20px;
-        }
-        
-        .cool-link a {
-            color: #0000ff;
-            text-decoration: underline;
-        }
-        
-        .cool-link a:visited {
-            color: #800080;
-        }
-        
-        .new-gif {
-            background-color: #ff0000;
-            color: #ffffff;
-            font-size: 10px;
-            padding: 2px 4px;
-            font-weight: bold;
-        }
-        
-        .hot-gif {
-            background-color: #ff6600;
-            color: #ffffff;
-            font-size: 10px;
-            padding: 2px 4px;
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1><img src="{{ '/assets/images/chips.png' | relative_url }}" alt="chips" style="height: 1em; vertical-align: middle;"> {% if page.header_title %}{{ page.header_title }}{% else %}{{ site.title }}{% endif %} <img src="{{ '/assets/images/chips.png' | relative_url }}" alt="chips" style="height: 1em; vertical-align: middle;"></h1>
-        {% if page.header_subtitle %}<p class="blink">{{ page.header_subtitle }}</p>{% endif %}
+        <h1><img src="{{ '/assets/images/chips.png' | relative_url }}" alt="chips" style="height: 1em; vertical-align: middle;"> {{ site.header_title }} <img src="{{ '/assets/images/chips.png' | relative_url }}" alt="chips" style="height: 1em; vertical-align: middle;"></h1>
+        <p class="blink">{{ site.header_subtitle }}</p>
     </div>
     
     <div class="navigation">
         <a href="{{ '/' | relative_url }}">HOME</a> |
-        <a href="{{ '/about/' | relative_url }}">ABOUT ME</a> |
-        <a href="{{ '/guestbook/' | relative_url }}">GUESTBOOK</a> |
-        <a href="{{ '/links/' | relative_url }}">COOL LINKS</a> |
+        <a href="{{ '/about/' | relative_url }}">ABOUT US</a> |
+        <a href="{{ '/authors/' | relative_url }}">AUTHORS</a> |
         <a href="{{ '/tags/' | relative_url }}">TAGS</a>
     </div>
     

@@ -1,16 +1,3 @@
-# My Totally Rad 90s Blog
-
-A nostalgic journey back to the early days of the World Wide Web! This Jekyll-powered blog recreates the authentic experience of 1990s personal homepages.
-
-## Features
-
-- 🌐 Authentic 90s styling with classic color schemes
-- 📊 Visitor counter that starts at 69 (because why not?)
-- 📝 Guestbook functionality (works with Netlify)
-- 🔗 Curated collection of cool links
-- 📱 Responsive design that still feels retro
-- ⚡ Powered by Jekyll and GitHub Pages
-
 ## Local Development
 
 ```bash

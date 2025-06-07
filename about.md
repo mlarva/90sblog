@@ -1,36 +1,32 @@
 ---
 layout: default
-title: "About Me"
-header_title: "About Me"
+title: "About Us"
+header_title: "🌐 About Our Crew"
+header_subtitle: "Meet the digital pioneers behind this rad site!"
 ---
 
-## All About Me!
+## Welcome to Our Corner of the Information Superhighway!
 
-**a/s/l:** 18/m/cali
+What started as one person's journey into the World Wide Web has grown into a collective of awesome writers sharing their passions with the Internet community. We're just regular folks who love sharing our thoughts, experiences, and totally radical insights!
 
-**Interests** Sports, beaches, The Sign 
+### Our Writing Team:
 
-**Occupation:** Professional Internet Explorer (the activity, not the browser!)
+{% for author_entry in site.authors %}
+{% assign author_id = author_entry[0] %}
+{% assign author_data = author_entry[1] %}
+{% assign author_posts = site.posts | where: "author", author_id %}
 
-### My Interests:
-- Surfing the Information Superhighway
-- Learning HTML and maybe some of that fancy JavaScript stuff
-- Collecting animated GIFs
-- Playing Doom via email
-- Waiting for web pages to load on my 28.8k modem
-- IRC chatting on #cool-people
+<div style="margin: 30px 0; padding: 20px; background-color: #e0e0e0; border: 3px outset #c0c0c0;">
+    <h4>{{ author_data.avatar }} <a href="{{ '/author/' | append: author_id | relative_url }}" style="color: #800080;">{{ author_data.name }}</a></h4>
+    <p><strong>Bio:</strong> {{ author_data.bio }}</p>
+    <p><strong>Posts:</strong> {{ author_posts.size }} awesome article{% if author_posts.size != 1 %}s{% endif %} and counting!</p>
+</div>
+{% endfor %}
 
-### My Computer Setup:
-I'm running a totally awesome Pentium 90MHz with 8MB of RAM and a massive 1GB hard drive! My setup includes:
-- Windows 95 (upgraded from DOS 6.22)
-- Netscape Navigator 3.0
-- A blazing fast 28.8k modem
-- SoundBlaster 16 for those sweet MIDI files
-- A 15" CRT monitor that only weighs 40 pounds!
+### Our Mission:
+We're here to share our unique perspectives and connect with fellow netizens across the globe. Whether it's sports, culture, city life, or just random thoughts, we believe everyone has something valuable to contribute to this amazing thing called the World Wide Web!
 
-### Why I Started This Blog:
-I wanted to have my own little corner of the World Wide Web where I could share my thoughts and connect with other Internet enthusiasts. The future is digital, and I want to be part of it!
+### Contact Us:
+Drop us a line at webmaster@myisp.net - but remember, we only check email twice a day when we dial up to the Internet, so please be patient!
 
-Feel free to drop me a line at my email address: webmaster@myisp.net (please be patient, I only check email twice a day when I dial up to the Internet)
-
-**Favorite Quote:** "The Internet is a series of tubes!" - Some guy on TV
+**Our Motto:** "The Internet brings us all together, one 56k connection at a time!"

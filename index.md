@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "Bad 90s Blog"
-header_title: "All That And A Bag Of Chips"
-header_subtitle: "*** NEW POSTS UPDATED WEEKLY! ***"
 ---
 
 <div style="text-align: center; margin: 20px 0;">
@@ -233,6 +231,16 @@ header_subtitle: "*** NEW POSTS UPDATED WEEKLY! ***"
 <div class="post">
     <div class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
     <div class="post-date">Posted: {{ post.date | date: "%B %d, %Y" }}</div>
+    
+    {% if post.author %}
+        {% assign author_data = site.authors[post.author] %}
+        {% if author_data %}
+            <div style="margin-top: 5px; font-size: 12px; color: #008000;">
+                By: <a href="{{ '/author/' | append: post.author | relative_url }}" style="color: #800080;">{{ author_data.avatar }} {{ author_data.name }}</a>
+            </div>
+        {% endif %}
+    {% endif %}
+    
     {% if post.tags and post.tags.size > 0 %}
     <div class="post-tags">
         <b>Tags:</b> 
