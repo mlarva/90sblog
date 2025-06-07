@@ -173,7 +173,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>🌐 {% if page.header_title %}{{ page.header_title }}{% else %}{{ site.title }}{% endif %} 🌐</h1>
+        <h1><img src="{{ '/assets/images/chips.png' | relative_url }}" alt="chips" style="height: 1em; vertical-align: middle;"> {% if page.header_title %}{{ page.header_title }}{% else %}{{ site.title }}{% endif %} <img src="{{ '/assets/images/chips.png' | relative_url }}" alt="chips" style="height: 1em; vertical-align: middle;"></h1>
         {% if page.header_subtitle %}<p class="blink">{{ page.header_subtitle }}</p>{% endif %}
     </div>
     
